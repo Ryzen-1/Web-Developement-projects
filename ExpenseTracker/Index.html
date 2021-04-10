@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="Index.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Expense Tracker</title>
+</head>
+
+<body>
+    <header style="font-family: Sofia ,sans-serif ; font-size: 6vh; text-shadow: 3px 3px 3px #ababab;">Expense Tracker
+    </header><br><br>
+    <h2>Your Balance</h2>
+    <h1 id="balance">0.00</h1>
+
+    <div class="container">
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="money plus">+0.00</p>
+            </div>
+            <div>
+                <h4>Expense</h4>
+                <p id="money-minus" class="money minus">-0.00</p>
+            </div>
+        </div>
+
+
+
+
+
+        <div style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <th></th>
+                    <th>
+                        <h3>History</h3>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="login-box">
+                            <h2>Add new transaction</h2>
+                            <form id="form">
+                                <div class="user-box" class="form-control">
+                                    <label>
+                                        <center>Enter description</center>
+                                    </label>
+                                    <br> <input id="text" type="text" name="" required="">
+
+                                </div>
+                                <div class="user-box" class="form-control">
+                                    <label>Amount <br> <strong><u>(use negative sign(-) for expense and positive
+                                                sign(+)for income)</u></strong></label>
+                                    <br> <input type="number" id="amount" name="" required="">
+
+                                </div>
+                                <br><br>
+                                <button class="btn">Add transaction</button>
+                            </form>
+                        </div>
+                    </td>
+                    <td>
+                        <ul id="list" class="list">
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
