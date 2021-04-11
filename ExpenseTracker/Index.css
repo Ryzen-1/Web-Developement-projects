@@ -19,7 +19,7 @@ th, td{
 }
 
 body {
-  background-color: #79f7bc;
+  background-image: linear-gradient(to right ,#F8FFAE,#43C6AC);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,9 +102,13 @@ input[type='number'] {
   width: 100%;
 }
 
+
+
+
+
 .btn {
   cursor: pointer;
-  background-color: #00000086;
+  background-color: #d87272;
   box-shadow: 20px 8px 80px -4px rgb(0, 0, 0);
   color: #fff;
   border: 0;
@@ -112,9 +116,13 @@ input[type='number'] {
   font-size: 16px;
   margin: 10px 0 30px;
   padding: 10px;
-  width: 100%;
+  width: 40%;
+  border-radius: 5px;
 }
 
+.btn:hover {
+  background-color: rgb(255, 0, 0);
+} */
 .btn:focus,
 .delete-btn:focus {
   outline: 0;
@@ -169,13 +177,14 @@ input[type='number'] {
 
 .login-box {
   align-items: center;
+  text-align: center;
   justify-content: center;
   position: relative;
   margin-top: 20px;
   width: 100%;
   padding: 40px;
   transform: translate(0%, 0%);
-  background: rgba(175, 64, 64, 0.432);
+  background-image: linear-gradient(to right, #4d8d80 ,#d8e091);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
@@ -210,7 +219,7 @@ input[type='number'] {
   top:0;
   left: 0;
   padding: 10px 0;
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(255, 255, 255);
   pointer-events: none;
   transition: .5s;
@@ -222,4 +231,28 @@ input[type='number'] {
   left: 0;
   color: #03e9f4;
   font-size: 12px;
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.548);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
